@@ -43,12 +43,12 @@ RSpec.describe PostsController, type: :controller do
             expect(response).to render_serializer :post_serializer
         end
 
-        it 'render post serializer (using RegEx)' do
-            expect(response).to assert_serializer %r{\APost.+\Z}
+        it 'rendered serializer class name starts with Post' do
+            expect(response).to render_serializer %r{\APost.+\Z}
         end
 
-        it 'not serializer was rendered' do
-            expect(response).to assert_serializer nil
+        it 'no serializer was rendered' do
+            expect(response).to render_serializer nil
         end
     end
 end

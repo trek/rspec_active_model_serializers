@@ -4,7 +4,7 @@ RSpec matchers for testing integration between Rails' controllers and ActiveMode
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this lines to your application's Gemfile:
 
 ```ruby
 group :test do
@@ -36,7 +36,7 @@ RSpec.describe PostsController, type: :controller do
         end
 
         it 'render post serializer' do
-            expect(response).to render_serializer PostSerializer
+            expect(response).to render_serializer 'PostSerializer'
         end
 
         it 'render post serializer (using symbol)' do

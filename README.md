@@ -1,6 +1,6 @@
 # Rspec for ActiveModel::Serializer
 
-RSpec matchers for testing integration between Rails' controllers and ActiveModel::Serialize
+RSpec matchers for testing integration between Rails' controllers and ActiveModel::Serializer
 
 ## Installation
 

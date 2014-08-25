@@ -1,10 +1,10 @@
 # Rspec for ActiveModel::Serializer
 
-RSpec matchers for testing integration between Rails' controllers and ActiveModel::Serialize
+RSpec matchers for testing integration between Rails' controllers and [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this lines to your application's Gemfile:
 
 ```ruby
 group :test do
@@ -36,19 +36,19 @@ RSpec.describe PostsController, type: :controller do
         end
 
         it 'render post serializer' do
-            expect(response).to render_serializer PostSerializer
+            expect(response).to render_serializer 'PostSerializer'
         end
 
         it 'render post serializer (using symbol)' do
             expect(response).to render_serializer :post_serializer
         end
 
-        it 'render post serializer (using RegEx)' do
-            expect(response).to assert_serializer %r{\APost.+\Z}
+        it 'rendered serializer class name starts with Post' do
+            expect(response).to render_serializer %r{\APost.+\Z}
         end
 
-        it 'not serializer was rendered' do
-            expect(response).to assert_serializer nil
+        it 'no serializer was rendered' do
+            expect(response).to render_serializer nil
         end
     end
 end

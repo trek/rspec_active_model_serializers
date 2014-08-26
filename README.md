@@ -1,4 +1,4 @@
-# Rspec for ActiveModel::Serializer
+# Rspec for ActiveModel::Serializer [![Build Status](https://travis-ci.org/SPBTV/rspec_active_model_serializers.svg?branch=feature%2Fserializer_rendering)](https://travis-ci.org/SPBTV/rspec_active_model_serializers)
 
 RSpec matchers for testing integration between Rails' controllers and [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
 

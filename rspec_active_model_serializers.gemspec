@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['abolshakov@spbtv.com']
   spec.summary       = %q{ RSpec for ActiveModel::Serializer }
   spec.description   = %q{ RSpec matchers for testing integration between Rails' controllers and ActiveModel::Serialize }
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/SPBTV/rspec_active_model_serializers'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

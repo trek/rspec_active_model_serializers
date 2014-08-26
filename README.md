@@ -35,6 +35,10 @@ RSpec.describe PostsController, type: :controller do
             get :index
         end
 
+        it 'render PostSerializer' do
+            expect(response).to render_serializer PostSerializer
+        end
+        
         it 'render post serializer' do
             expect(response).to render_serializer 'PostSerializer'
         end

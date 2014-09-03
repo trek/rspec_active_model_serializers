@@ -2,7 +2,6 @@ require 'spec_helper'
 
 %w[render_serializer have_rendered_serializer].each do |serializer_expectation|
   describe serializer_expectation do
-    include RSpec::ActiveModelSerializers::Matchers::RenderSerializer
     let(:response) { ActionController::TestResponse.new }
 
     context 'given a hash' do

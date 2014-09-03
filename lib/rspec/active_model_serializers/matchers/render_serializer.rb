@@ -2,7 +2,8 @@ module RSpec
   module ActiveModelSerializers
     module Matchers
       module RenderSerializer
-        # @private
+        extend AcitveSupport::Concern
+        # @privatge
         class RenderSerializerMatcher < RSpec::Matchers::BuiltIn::BaseMatcher
 
           def initialize(scope, expected, message=nil)

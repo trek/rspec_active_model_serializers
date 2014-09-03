@@ -2,7 +2,8 @@ module RSpec
   module ActiveModelSerializers
     module Matchers
       module RenderSerializer
-        extend AcitveSupport::Concern
+        extend ActiveSupport::Concern
+
         # @privatge
         class RenderSerializerMatcher < RSpec::Matchers::BuiltIn::BaseMatcher
 
